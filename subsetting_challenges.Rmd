@@ -1,0 +1,38 @@
+---
+title: "Subsetting challenges"
+author: "Andrew MacDonald"
+date: "July 25, 2015"
+output: ioslides_presentation
+---
+
+## Subsetting a named vector
+
+
+Here is a named numeric vector:
+```{r, results=''}
+x <- c("a" = 5.4, "b" = 6.2, "c" = 7.1, "d" = 4.8, "e" = 7.5)
+print(x)
+```
+
+Come up with **3 commands** which produce the following output:
+
+```{r, echo=FALSE}
+x[c(2:4)]
+```
+
+## List subsetting
+
+obtain the number `2`:
+
+```{r, echo=FALSE}
+library(gapminder)
+```
+
+
+```{r}
+xlist <- list(a = "Software Carpentry", 
+              b = 1:10,
+              c = head(gapminder))
+xlist
+```
+
