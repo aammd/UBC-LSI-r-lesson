@@ -10,5 +10,5 @@ cv <- function(x){
   the_cv <- sd(x) / mean(x)
   return(the_cv)
 }
-
+New function
 
